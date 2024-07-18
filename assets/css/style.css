@@ -1,0 +1,15 @@
+body {
+  font-family: sans-serif;
+}
+
+.bg-hero {
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../images/landingPageDesktop.png");
+}
+
+.bg-hero-mobile {
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../images/landingPageDesktop.png");
+}
