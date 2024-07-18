@@ -8,8 +8,39 @@ body {
   background-image: url("../images/landingPageDesktop.png");
 }
 
-.bg-hero-mobile {
+:root {
+    --bs-primary : #59B9C7;
+}
+
+.bg-perso {
+    background-color: var(--bs-primary) !important;
+}
+
+.color-perso {
+    color: var(--bs-primary) !important;
+}
+
+/* Image Carousel*/
+
+.img-carousel {
+  position: center;
+  size: cover;
+  height: 400px;
+}
+
+.bg-pub {
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../images/landingPageDesktop.png");  
+}
+
+.bg-pub2 {
   background-position: center center;
   background-size: cover;
   background-image: url("../images/landingPageDesktop.png");
+}
+
+.p-promo {
+  top: 80% !important;
+  left: 30% !important;
 }
