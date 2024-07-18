@@ -44,3 +44,9 @@ body {
   top: 80% !important;
   left: 30% !important;
 }
+
+.bg-connexion {
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../images/bg-connexion.jpg");
+}
