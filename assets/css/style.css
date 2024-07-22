@@ -5,7 +5,7 @@ body {
 .bg-hero {
   background-position: center center;
   background-size: cover;
-  background-image: url("../images/landingPageDesktop.png");
+  background-image: url("../images/bg-connexion.jpg");
 }
 
 :root {

@@ -21,16 +21,16 @@
                 <img src="assets/images/Logo studi voyage.png" alt="Logo Studi Voyages">
             </a>
             <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span
+                aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler me-5"><span
                     class="navbar-toggler-icon"></span></button>
             <div id="navbarNav" class="collapse navbar-collapse justify-content-end pe-5">
                 <ul class="navbar-nav px-4">
-                    <li class="nav-item"><a href="#" class="nav-link">Circuits signature</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Dernières minutes</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Destination préférés</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Nos idées voyages</a></li>
+                    <li class="nav-item"><a href="#circuits" class="nav-link">Circuits signature</a></li>
+                    <li class="nav-item"><a href="#minutes" class="nav-link">Dernières minutes</a></li>
+                    <li class="nav-item"><a href="#prefere" class="nav-link">Destination préférés</a></li>
+                    <li class="nav-item"><a href="#idee" class="nav-link">Nos idées voyages</a></li>
                 </ul>
-                <div class="navbar-text">
+                <div class="navbar-text px-4">
                     <a href="connexion.html" class="btn bg-perso text-white shadow">Connexion</a>
                 </div>
             </div>
@@ -42,27 +42,45 @@
 
         <!-- Landing Page / Hero Desktop -->
         <section class="bg-hero vh-100 p-5">
-            <div class="container h-100 d-flex flex-column justify-content-center">
+            <div class="container h-100 d-flex flex-column justify-content-around">
 
-                <h1 class="text-white display-3 fw-semibold my-5">VOUS EMMENER<br> PLUS LOIN</h1>
-
-                <nav class="navbar navbar-expand-lg my-5">
-                    <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarLanding"
-                        aria-controls="navbarLanding" aria-expanded="false" aria-label="Toggle navigation"
-                        class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
-                    <div id="navbarLanding" class="collapse navbar-collapse">
-                        <ul class="navbar-nav w-75">
-                            <li class="navbar-item w-20"><a href="#" class="btn btn-light px-5">Destination</a></li>
-                            <li class="navbar-item w-20"><a href="#" class="btn btn-light px-5">Départ</a></li>
-                            <li class="navbar-item w-20"><a href="#" class="btn btn-light px-5">Arrivée</a></li>
-                            <li class="navbar-item w-20"><a href="#" class="btn btn-light px-5">Durée</a></li>
-                            <li class="navbar-item w-20"><a href="#" class="btn btn-light px-5">Dates</a></li>
-                        </ul>
-                        <div class="navbar-text ms-5 p-5 justify-content-end">
-                            <a href="#" class="btn bg-perso text-white shadow">Rechercher</a>
+                <h1 class="text-white display-3 fw-semibold my-5 w-50">VOUS EMMENER<br> PLUS LOIN</h1>
+                <form action="">
+                    <div class="row d-block d-flex g-0 gy-2">
+                        <div class="col-sm-12 col-md-4 col-lg-3">
+                            <input class="form-control" type="text" placeholder="Indiquez votre destination">
+                        </div>
+                        <div class="col-sm-12 col-lg-2">
+                            <select class="form-select" name="ville" id="ville">
+                                <option value="depart">Ville de départ</option>
+                                <option value="paris">Paris</option>
+                                <option value="nice">Nice</option>
+                                <option value="marseille">Marseille</option>
+                                <option value="lyon">Lyon</option>
+                                <option value="toulouse">Toulouse</option>
+                                <option value="sansTransport">Sans Transport</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-12 col-lg-1">
+                            <select class="form-select" name="duree" id="duree">
+                                <option value="none">Durée</option>
+                                <option value="2">1 à 2 nuits</option>
+                                <option value="6">3 à 6 nuits</option>
+                                <option value="7">1 semaine</option>
+                                <option value="8">Plus d'une semaine</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-12 col-lg-2">
+                            <input class="form-control" type="date" placeholder="Date de départ">
+                        </div>
+                        <div class="col-sm-12 col-lg-2">
+                            <input class="form-control" type="text" placeholder="+ De critères">
+                        </div>
+                        <div class="col-sm-12 col-lg-1 ms-lg-4">
+                            <button class="btn bg-perso text-white" type="submit">Rechercher</button>
                         </div>
                     </div>
-                </nav>
+                </form>
             </div>
         </section>
 
@@ -70,8 +88,8 @@
         <section class="container">
             <div class="row">
                 <h3 class="color-perso mt-4">LES IMBATTABLES DU MOMENT</h3>
-                <div class="card col-sm-12 col-md-6 col-lg-3 p-3 mt-3 mb-4">
-                    <img src="assets/images/imbattables/corse.png" class="card-img-top" alt="...">
+                <div class="card col-sm-12 col-md-6 col-lg-3 p-3 mt-3 mb-3">
+                    <img src="assets/images/egypte.jpg" class="card-img-top" alt="...">
 
                     <a class="card-body text-decoration-none d-flex flex-column" href="">
                         <h5 class="h6 card-title color-perso">Egypte, Hurghada</h5>
@@ -95,7 +113,7 @@
         <!-- Section Caroussel -->
 
         <section class="container-fluid p-0">
-            <div id="carouselExampleCaptions" class="carousel slide">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -144,23 +162,23 @@
         </section>
 
         <!-- Section Circuits signatures-->
-        <section class="container">
+        <section class="container" id="circuits">
             <div class="row">
                 <h3 class="color-perso mt-4">LES CIRCUITS SIGNATURES</h3>
                 <div class="card col-sm-12 col-md-6 col-lg-4 p-3 mt-3 mb-5">
-                    <img src="assets/images/imbattables/corse.png" class="card-img-top" alt="...">
+                    <img src="assets/images/turquie.jpg" class="card-img-top" alt="...">
 
                     <a class="card-body text-decoration-none d-flex flex-column" href="">
-                        <h5 class="h6 card-title color-perso">Egypte, Hurghada</h5>
-                        <h6 class="h5">Hôtel Zya Regina ****</h6>
+                        <h5 class="h6 card-title color-perso">Turquie, Istanbul</h5>
+                        <h6 class="h5">Circuit Légendaire ****</h6>
                         <div class="d-flex justify-content-between">
-                            <p class="fw-lighter card-text align-self-center">Séjour, 8 jours, 7 nuits </p>
-                            <p class="btn btn-warning text-white p-1">-51%</p>
+                            <p class="fw-lighter card-text align-self-center">Circuit, 9 jours, 8 nuits </p>
+                            <p class="btn btn-warning text-white p-1">-20%</p>
                         </div>
                         <div class="align-self-end m-0 p-O d-flex flex-column">
                             <p class="small align-self-end">A partir de</p>
-                            <p class=" fs-2 color-perso fw-semibold align-self-end">923 €*</p>
-                            <p class="align-self-end">au lieu de 1895€</p>
+                            <p class=" fs-2 color-perso fw-semibold align-self-end">786 €*</p>
+                            <p class="align-self-end">au lieu de 987€</p>
                         </div>
                     </a>
                 </div>
@@ -181,7 +199,14 @@
                     <div class="car col-sm-12 col-md-6 position-relative">
                         <img src="assets/images/imbattables/corse.png" class="card-img-top" alt="...">
                         <a class="card-body text-decoration-none d-flex flex-column position-absolute p-promo" href="">
-                            <h4 class="text-white">Nos séjours à petit prix</h4>
+                            <h4 class="text-white mb-3">Nos séjours à petit prix</h4>
+                            <button class="btn bg-perso text-white">Découvrir</button>
+                        </a>
+                    </div>
+                    <div class="car col-sm-12 col-md-6 position-relative">
+                        <img src="assets/images/fuji.png" class="card-img-top" alt="...">
+                        <a class="card-body text-decoration-none d-flex flex-column position-absolute p-promo" href="">
+                            <h4 class="text-white mb-3">Nos voyages à la carte</h4>
                             <button class="btn bg-perso text-white">Découvrir</button>
                         </a>
                     </div>
@@ -191,23 +216,23 @@
         </section>
 
         <!-- Section Dernières minutes-->
-        <section class="container">
+        <section class="container" id="minutes">
             <div class="row">
                 <h3 class="color-perso mt-4">DERNIERE MINUTE</h3>
                 <div class="card col-sm-12 col-md-6 col-lg-4 p-3 mt-3 mb-3">
-                    <img src="assets/images/imbattables/corse.png" class="card-img-top" alt="...">
+                    <img src="assets/images/marrakech.jpg" class="card-img-top" alt="...">
 
                     <a class="card-body text-decoration-none d-flex flex-column" href="">
-                        <h5 class="h6 card-title color-perso">Egypte, Hurghada</h5>
-                        <h6 class="h5">Hôtel Zya Regina ****</h6>
+                        <h5 class="h6 card-title color-perso">Maroc, Marrakech</h5>
+                        <h6 class="h5">Riad Les 3 Palmiers</h6>
                         <div class="d-flex justify-content-between">
-                            <p class="fw-lighter card-text align-self-center">Séjour, 8 jours, 7 nuits </p>
-                            <p class="btn btn-warning text-white p-1">-51%</p>
+                            <p class="fw-lighter card-text align-self-center">Séjour, 9 jours, 8 nuits </p>
+                            <p class=" text-white p-1"></p>
                         </div>
                         <div class="align-self-end m-0 p-O d-flex flex-column">
-                            <p class="small align-self-end">A partir de</p>
-                            <p class=" fs-2 color-perso fw-semibold align-self-end">923 €*</p>
-                            <p class="align-self-end">au lieu de 1895€</p>
+                            <p class="small align-self-end"></p>
+                            <p class=" fs-2 color-perso fw-semibold align-self-end">507€*</p>
+                            <p class="align-self-end"></p>
                         </div>
                     </a>
                 </div>
@@ -215,7 +240,7 @@
         </section>
 
         <!-- Section Destinations préférées de nos clients-->
-        <section class="container">
+        <section class="container" id="prefere">
             <div class="row">
                 <h3 class="color-perso mt-4">LES DESTINATIONS PREFEREES DE NOS CLIENTS</h3>
                 <div class="card col-sm-12 col-md-4 col-lg-3 p-3 mt-3 mb-5">
@@ -223,8 +248,8 @@
 
                     <a class="card-body text-decoration-none d-flex flex-column" href="">
                         <div class="d-flex justify-content-center">
-                            <h5 class="h3 card-title color-perso">Grèce</h5>
-                        </div>   
+                            <h5 class="h3 card-title color-perso">Corse</h5>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -232,6 +257,26 @@
                 <button class="btn bg-perso text-white ">Encore plus d'offres</button>
             </div>
 
+
+        </section>
+
+
+        <!-- Section Idées Voyages -->
+        <section>
+
+            <div class="container mb-5" id="idee">
+                <div class="row">
+                    <h3 class="color-perso mt-4">NOS IDEES VOYAGES</h3>
+                    <div class="car col-sm-12 col-md-4 position-relative">
+                        <img src="assets/images/vac-famille.jpg" class="card-img-top" alt="...">
+                        <a class="card-body text-decoration-none d-flex flex-column position-absolute top-50 ms-3"
+                            href="">
+                            <h4 class="text-white mb-3">Famille</h4>
+                            <button class="btn bg-perso text-white">Découvrir maintenant</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
         </section>
 
