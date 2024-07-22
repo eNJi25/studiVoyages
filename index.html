@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Accueil Studi Voyages</title>
+</head>
+
+<body>
+
+    <header class="sticky-top bg-transparent">
+
+        <!-- Navbar Sticky-top -->
+        <nav class="navbar navbar-light navbar-expand-lg ps-5">
+            <a href="index.html" class="navbar-brand">
+                <img src="assets/images/Logo studi voyage.png" alt="Logo Studi Voyages">
+            </a>
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler me-5"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div id="navbarNav" class="collapse navbar-collapse justify-content-end pe-5">
+                <ul class="navbar-nav px-4">
+                    <li class="nav-item"><a href="#circuits" class="nav-link">Circuits signature</a></li>
+                    <li class="nav-item"><a href="#minutes" class="nav-link">Dernières minutes</a></li>
+                    <li class="nav-item"><a href="#prefere" class="nav-link">Destination préférés</a></li>
+                    <li class="nav-item"><a href="#idee" class="nav-link">Nos idées voyages</a></li>
+                </ul>
+                <div class="navbar-text px-4">
+                    <a href="connexion.html" class="btn bg-perso text-white shadow">Connexion</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Landing Page / Hero Desktop -->
+        <section class="bg-hero vh-100 p-5">
+            <div class="container h-100 d-flex flex-column justify-content-around">
+
+                <h1 class="text-white display-3 fw-semibold my-5 w-50">VOUS EMMENER<br> PLUS LOIN</h1>
+                <form action="">
+                    <div class="row d-block d-flex g-0 gy-2">
+                        <div class="col-sm-12 col-md-4 col-lg-3">
+                            <input class="form-control" type="text" placeholder="Indiquez votre destination">
+                        </div>
+                        <div class="col-sm-12 col-lg-2">
+                            <select class="form-select" name="ville" id="ville">
+                                <option value="depart">Ville de départ</option>
+                                <option value="paris">Paris</option>
+                                <option value="nice">Nice</option>
+                                <option value="marseille">Marseille</option>
+                                <option value="lyon">Lyon</option>
+                                <option value="toulouse">Toulouse</option>
+                                <option value="sansTransport">Sans Transport</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-12 col-lg-1">
+                            <select class="form-select" name="duree" id="duree">
+                                <option value="none">Durée</option>
+                                <option value="2">1 à 2 nuits</option>
+                                <option value="6">3 à 6 nuits</option>
+                                <option value="7">1 semaine</option>
+                                <option value="8">Plus d'une semaine</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-12 col-lg-2">
+                            <input class="form-control" type="date" placeholder="Date de départ">
+                        </div>
+                        <div class="col-sm-12 col-lg-2">
+                            <input class="form-control" type="text" placeholder="+ De critères">
+                        </div>
+                        <div class="col-sm-12 col-lg-1 ms-lg-4">
+                            <button class="btn bg-perso text-white" type="submit">Rechercher</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Section Les imbattables-->
+        <section class="container">
+            <div class="row">
+                <h3 class="color-perso mt-4">LES IMBATTABLES DU MOMENT</h3>
+                <div class="card col-sm-12 col-md-6 col-lg-3 p-3 mt-3 mb-3">
+                    <img src="assets/images/egypte.jpg" class="card-img-top" alt="...">
+
+                    <a class="card-body text-decoration-none d-flex flex-column" href="">
+                        <h5 class="h6 card-title color-perso">Egypte, Hurghada</h5>
+                        <h6 class="h5">Hôtel Zya Regina ****</h6>
+                        <div class="d-flex justify-content-between">
+                            <p class="fw-lighter card-text align-self-center">Séjour, 8 jours, 7 nuits </p>
+                            <p class="btn btn-warning text-white p-1">-51%</p>
+                        </div>
+                        <div class="align-self-end m-0 p-O d-flex flex-column">
+                            <p class="small align-self-end">A partir de</p>
+                            <p class=" fs-2 color-perso fw-semibold align-self-end">923 €*</p>
+                            <p class="align-self-end">au lieu de 1895€</p>
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Section Caroussel -->
+
+        <section class="container-fluid p-0">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/images/caroussel/firstSlide.png" class="d-block w-100 img-carousel" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="h1 fw-semibold">LE TEMPS D'UN ETE</h5>
+                            <p>Découvrez nos plus belles destinations</p>
+                            <p class="btn bg-perso text-white">DECOUVRIR</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/caroussel/secondSlide.png" class="d-block w-100 img-carousel" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="h1 fw-semibold">SEJOURS TOUT COMPRIS</h5>
+                            <p>Le bonheur commence ici</p>
+                            <p class="btn bg-perso text-white">DECOUVRIR</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/caroussel/thirdSlide.png" class="d-block w-100 img-carousel" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="h1 fw-semibold">DERNIERES MINUTES</h5>
+                            <p>Partez le coeur léger</p>
+                            <p class="btn bg-perso text-white">DECOUVRIR</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Section Circuits signatures-->
+        <section class="container" id="circuits">
+            <div class="row">
+                <h3 class="color-perso mt-4">LES CIRCUITS SIGNATURES</h3>
+                <div class="card col-sm-12 col-md-6 col-lg-4 p-3 mt-3 mb-5">
+                    <img src="assets/images/turquie.jpg" class="card-img-top" alt="...">
+
+                    <a class="card-body text-decoration-none d-flex flex-column" href="">
+                        <h5 class="h6 card-title color-perso">Turquie, Istanbul</h5>
+                        <h6 class="h5">Circuit Légendaire ****</h6>
+                        <div class="d-flex justify-content-between">
+                            <p class="fw-lighter card-text align-self-center">Circuit, 9 jours, 8 nuits </p>
+                            <p class="btn btn-warning text-white p-1">-20%</p>
+                        </div>
+                        <div class="align-self-end m-0 p-O d-flex flex-column">
+                            <p class="small align-self-end">A partir de</p>
+                            <p class=" fs-2 color-perso fw-semibold align-self-end">786 €*</p>
+                            <p class="align-self-end">au lieu de 987€</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end mb-5">
+                <button class="btn bg-perso text-white ">Encore plus d'offres</button>
+            </div>
+
+
+        </section>
+
+        <!-- Section 2 blocs promos -->
+
+        <section>
+
+            <div class="container">
+                <div class="row">
+                    <div class="car col-sm-12 col-md-6 position-relative">
+                        <img src="assets/images/imbattables/corse.png" class="card-img-top" alt="...">
+                        <a class="card-body text-decoration-none d-flex flex-column position-absolute p-promo" href="">
+                            <h4 class="text-white mb-3">Nos séjours à petit prix</h4>
+                            <button class="btn bg-perso text-white">Découvrir</button>
+                        </a>
+                    </div>
+                    <div class="car col-sm-12 col-md-6 position-relative">
+                        <img src="assets/images/fuji.png" class="card-img-top" alt="...">
+                        <a class="card-body text-decoration-none d-flex flex-column position-absolute p-promo" href="">
+                            <h4 class="text-white mb-3">Nos voyages à la carte</h4>
+                            <button class="btn bg-perso text-white">Découvrir</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Section Dernières minutes-->
+        <section class="container" id="minutes">
+            <div class="row">
+                <h3 class="color-perso mt-4">DERNIERE MINUTE</h3>
+                <div class="card col-sm-12 col-md-6 col-lg-4 p-3 mt-3 mb-3">
+                    <img src="assets/images/marrakech.jpg" class="card-img-top" alt="...">
+
+                    <a class="card-body text-decoration-none d-flex flex-column" href="">
+                        <h5 class="h6 card-title color-perso">Maroc, Marrakech</h5>
+                        <h6 class="h5">Riad Les 3 Palmiers</h6>
+                        <div class="d-flex justify-content-between">
+                            <p class="fw-lighter card-text align-self-center">Séjour, 9 jours, 8 nuits </p>
+                            <p class=" text-white p-1"></p>
+                        </div>
+                        <div class="align-self-end m-0 p-O d-flex flex-column">
+                            <p class="small align-self-end"></p>
+                            <p class=" fs-2 color-perso fw-semibold align-self-end">507€*</p>
+                            <p class="align-self-end"></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Destinations préférées de nos clients-->
+        <section class="container" id="prefere">
+            <div class="row">
+                <h3 class="color-perso mt-4">LES DESTINATIONS PREFEREES DE NOS CLIENTS</h3>
+                <div class="card col-sm-12 col-md-4 col-lg-3 p-3 mt-3 mb-5">
+                    <img src="assets/images/imbattables/corse.png" class="card-img-top" alt="...">
+
+                    <a class="card-body text-decoration-none d-flex flex-column" href="">
+                        <div class="d-flex justify-content-center">
+                            <h5 class="h3 card-title color-perso">Corse</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end mb-5">
+                <button class="btn bg-perso text-white ">Encore plus d'offres</button>
+            </div>
+
+
+        </section>
+
+
+        <!-- Section Idées Voyages -->
+        <section>
+
+            <div class="container mb-5" id="idee">
+                <div class="row">
+                    <h3 class="color-perso mt-4">NOS IDEES VOYAGES</h3>
+                    <div class="car col-sm-12 col-md-4 position-relative">
+                        <img src="assets/images/vac-famille.jpg" class="card-img-top" alt="...">
+                        <a class="card-body text-decoration-none d-flex flex-column position-absolute top-50 ms-3"
+                            href="">
+                            <h4 class="text-white mb-3">Famille</h4>
+                            <button class="btn bg-perso text-white">Découvrir maintenant</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="container-fluid bg-light">
+            <div class="row gy-3 d-flex align-items-center">
+                <div class="col-md-4 text-center">
+                    <img class="img-fluid" src="assets/images/Logo studi voyage.png" alt="">
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3 class="pb-3 logo-color ">Informations</h3>
+                    <p><a class="text-decoration-none small text-black" href="#">Mentions légales</a></p>
+                    <p><a class="text-decoration-none small text-black" href="#">Conditions Générales</a></p>
+                    <p><a class="text-decoration-none small text-black" href="#">Contact</a></p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3 class="pb-3 logo-color">Nous suivre</h3>
+                    <p class="fs-1 text-center">
+                        <a class="color-perso" href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a class="color-perso" href="#">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a class="color-perso" href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a class="color-perso" href="#">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <hr class="border border-secondary">
+            <p class="text-center small">&copy; 2024 - StudiVoyages - Tout les droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
